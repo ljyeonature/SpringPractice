@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- DI : 빈(bean=class/객체) 정의 -->
+<!-- 서로 다른 객체를 만들고 싶을 때 scope:prototype -->
+<bean id='ko' class="ex1_xml.MessageBeanKoImpl" scope="prototype"></bean>
+<bean id='en' class="ex1_xml.MessageBeanEnImpl"></bean>
+
+
+</beans>
+
+<!-- applicationContext.xml -->
