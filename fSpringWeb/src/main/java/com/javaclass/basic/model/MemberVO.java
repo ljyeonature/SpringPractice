@@ -9,6 +9,20 @@ public class MemberVO {
 	private String name;
 	private String age;
 	
+	private boolean state;
+	
+//	public void setState(boolean state) 
+//	{
+//		this.state = state;
+//	}
+
+	// boolean은 getter가 is로 시작
+	
+//	public boolean isState() 
+//	{
+//		return state;
+//	}
+	
 	
 	
 	

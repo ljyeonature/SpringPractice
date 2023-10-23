@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> /WEB-INF/views/hello.jsp </title>
+<title>re/c.jsp</title>
 </head>
 <body>
-<h2>hello.jsp 뷰페이지입니다</h2>
-${dbvalue}이 전달되었습니다. <br />
-${login}님이 로그인하였습니다
+<h2>re/c.do 요청인 경우의 뷰페이지</h2>
 
+파라미터 값 : ${param.id }
 </body>
 </html>
