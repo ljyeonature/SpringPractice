@@ -20,11 +20,13 @@
 	</tr>
 	<!-- MemberList.java > MemberList 클래스의 list -->
 	<c:forEach var='vo' items='${memberList.list }'>
-		<tr>
-			<td>${vo.name }</td>
-			<td>${vo.id }</td>
-			<td>${vo.age }</td>
-		</tr>
+		<c:if test="${vo.state}">
+			<tr>
+				<td>${vo.name }</td>
+				<td>${vo.id }</td>
+				<td>${vo.age }</td>
+			</tr>
+		</c:if>
 	</c:forEach>
 	
 
