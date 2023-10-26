@@ -39,7 +39,7 @@ public class MemberController {
 			return "loginForm";
 		}else {
 			// (5) 로그인 성공한 사용자이름을 세션에 저장
-			session.setAttribute("logname", vo.getUserid());
+			session.setAttribute("logname", result.getUserid());
 			
 			return "loginConfirm";
 		}

@@ -35,17 +35,17 @@
 		WHERE SEQ = #{seq}
 	</select>
 	
-	<select id="getBoardList" resultType="BoardVO"  >
+	<!-- <select id="getBoardList" resultType="BoardVO"  >
 			
 			SELECT *
 			FROM BOARD
 			ORDER BY SEQ DESC
 		
-	</select> 
+	</select>  -->
 	
 	
 	<!-- 검색 추가  -->
-	<!-- 
+	
 	<select id="getBoardList" resultType="BoardVO"  parameterType="hashmap">
 		
 		SELECT *
@@ -58,5 +58,5 @@
 		ORDER BY SEQ DESC
 		
 	</select>
-	 -->
+	 
 </mapper>

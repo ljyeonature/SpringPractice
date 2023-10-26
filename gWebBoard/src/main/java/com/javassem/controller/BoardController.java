@@ -1,5 +1,6 @@
 package com.javassem.controller;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,9 +51,13 @@ public class BoardController {
 	}
 	
 	@RequestMapping("/getBoardList.do")
-	public void getBoardList(Model m)
+	public void getBoardList(Model m, String searchCondition, String searchKeyword)
 	{
-		List<BoardVO> result = boardService.getBoardList();
+		HashMap map = new HashMap();
+		map.put("searchCondition", searchCondition);
+		map.put("searchKeyword", searchKeyword);
+		
+		List<BoardVO> result = boardService.getBoardList(map);
 		m.addAttribute("boardList", result);
 	}
 	
